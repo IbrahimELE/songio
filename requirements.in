@@ -1,0 +1,6 @@
+spotdl==4.5.2
+yt-dlp==2026.8.19
+imageio-ffmpeg==0.6.0
+mutagen==1.47.0
+requests>=2.32,<3
+Pillow>=11,<13
