@@ -1,0 +1,32 @@
+{
+  "id": "songio",
+  "package_id": "7aba1e30-54e0-46b1-9a1d-b06e3d0446f1",
+  "name": "SONGIO",
+  "version": "0.1.0",
+  "description": "Prepare tagged audio results from Spotify and YouTube links for review.",
+  "theme_color": "#a9eb3d",
+  "author": "IbrahimELE",
+  "entry": "index.jsx",
+  "icon": "icon.png",
+  "offline_capable": false,
+  "service": {"id": "songio", "entry": "service.py", "access": "self"},
+  "schedule": {"job": "job.py"},
+  "python": {"lock": "requirements.lock"},
+  "source_files": [
+    "service.py", "web_core.py", "requirements.lock",
+    "songio/__init__.py", "songio/models.py", "songio/paths.py",
+    "songio/settings.py", "songio/sources.py", "songio/downloader.py",
+    "songio/tagging.py", "songio/tools.py"
+  ],
+  "store": {
+    "tagline": "Prepare tagged audio results from Spotify and YouTube links.",
+    "description": "Paste a Spotify or YouTube track, album, or playlist link. SONGIO finds matching audio on YouTube, prepares tagged results with title, artist, and artwork, and shows progress for review. This Store version does not export files. An internet connection is required. Use only content you have permission to use.",
+    "screenshots": [
+      {
+        "src": "static/store/songio-mobile.png",
+        "alt": "SONGIO on mobile with a Spotify and YouTube link field and Create MP3 button; no personal data is shown.",
+        "label": "Paste a link and create an MP3"
+      }
+    ]
+  }
+}
